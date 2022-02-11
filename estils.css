@@ -1,8 +1,9 @@
         .graella {
+            height: 75vh;
             display: grid;
             grid-template-columns: auto auto auto auto;
-            padding: 10px;
-            grid-gap: 10px;
+            
+      
         }
         .grid-item {
             border: 1px solid rgba(0, 0, 0, 0.8);
@@ -10,6 +11,7 @@
             text-align: center;
         }
         .grid-grande{ 
+            height: 25vh;
             display: grid;
             justify-content: center;
         }
@@ -33,6 +35,10 @@
             .graella{
                 grid-template-columns: repeat(12,1fr);
             }
+        }
+        body{
+            box-sizing: border-box;
+            margin: 0;
         }
        
      
