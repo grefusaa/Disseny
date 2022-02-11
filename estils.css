@@ -1,0 +1,40 @@
+        .graella {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            padding: 10px;
+            grid-gap: 10px;
+        }
+        .grid-item {
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+        .grid-grande{ 
+            display: grid;
+            justify-content: center;
+        }
+        @media only screen and (max-width: 600px) {
+            .graella{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+
+        @media (orientation:landscape) {
+            .graella{
+                grid-template-columns: repeat(4,1fr);
+            }
+        }
+        @media only screen and (min-width: 600px) {
+            .graella{
+                grid-template-columns: repeat(6,1fr);
+            }
+        }
+        @media only screen and (min-width: 992px) {
+            .graella{
+                grid-template-columns: repeat(12,1fr);
+            }
+        }
+       
+     
+    
+    
